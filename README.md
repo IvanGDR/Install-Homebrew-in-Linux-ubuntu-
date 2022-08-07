@@ -1,4 +1,4 @@
-# Install Homebrew in Linux (ubuntu)
+# Install k9s using Homebrew in Linux (ubuntu)
 
 After installing k9s using snap, it should be noted, this package is not longer mantained so it won't work if you install it.
 
@@ -135,9 +135,76 @@ $ brew doctor                                                                   
 Your system is ready to brew.
 ```
 
-# Homebrew Uninstallation Script
+## Homebrew Uninstallation Script
 ```
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 ```
 
+## Finally in order to Install k9s
+```
+$ brew install derailed/k9s/k9s                                                                                                              ✔  46s  
+```
+```
+Running `brew update --auto-update`...
+==> Tapping derailed/k9s
+Cloning into '/home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/derailed/homebrew-k9s'...
+remote: Enumerating objects: 816, done.
+remote: Counting objects: 100% (400/400), done.
+...
+==> Installing k9s from derailed/k9s
+🍺  /home/linuxbrew/.linuxbrew/Cellar/k9s/0.26.3: 5 files, 53.3MB, built in 16 seconds
+````
 
+## Checking k9s installation
+
+In this case, there is a minikube installation running. The config file is in the home directory under .kube folder:
+```
+$ ls -la
+```
+```
+...
+drwxr-xr-x  4 ivang docker   4096 Aug  7 19:55  .kube
+...
+```
+
+Furthermore
+
+```
+ $ ~/.kube> ls -la                                                                                                                                       ✔ 
+```
+```
+drwxr-x---  4 ivang docker 4096 Dec 16  2021 cache
+-rw-------  1 ivang docker  824 Aug  7 16:44 config
+```
+
+### Double cheking k9s is running
+```
+$ k9s
+```
+&nbsp;
+<p align="center">
+<img width="800" height="250" src="https://user-images.githubusercontent.com/67383481/183307035-46e9831f-a03f-4dec-b62f-fc84e1542f3d.png">
+</p>
+&nbsp;
+
+### k9s installation info
+```
+ $ k9s info 
+ ```
+ ```
+ _  _  __.________       
+|    |/ _/   __   \______
+|      < \____    /  ___/
+|    |  \   /    /\___ \ 
+|____|__ \ /____//____  >
+        \/            \/ 
+
+Configuration:   /home/ivang/.config/k9s/config.yml
+Logs:            /tmp/k9s-ivang.log
+Screen Dumps:    /tmp/k9s-screens-ivang
+```
+
+**Note:
+For further k9s tuning go to:
+
+https://github.com/IvanGDR/Installing-K9S-in-macOS-and-connecting-to-Remote-K8S-cluster/blob/main/README.md
