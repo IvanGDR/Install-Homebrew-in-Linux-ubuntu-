@@ -170,13 +170,24 @@ remote: Counting objects: 100% (400/400), done.
 
 ## Checking k9s installation
 
-In this case, there is a minikube installation running, first:
+In this case, there is a minikube installation running.
+
+first make sure docker is running:
 ```
-$ minikube start) . 
+$ sudo service docker status
 ```
 
-then,
+otherwise, start/restart docker:
+```
+$ sudo service docker restart
+```
 
+then, start minikube:
+```
+$ minikube start 
+```
+
+check minikube status,
 ```
 $ minikube status                                                                                                                                    ✔ 
 ```
@@ -187,10 +198,9 @@ host: Running
 kubelet: Running
 apiserver: Running
 kubeconfig: Configured
-
 ```
 
-The config file is in the home directory under .kube folder:
+Additionally, the config file is in the home directory under .kube folder:
 ```
 $ ls -la
 ```
