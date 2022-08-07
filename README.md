@@ -90,7 +90,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 
 Following the recommendations after installing Homebrew:
 
-#### Add Homebrew to system path
+#### Add Homebrew to system path (instead .zprofile it could be .zshrc or .bashrc)
 ```
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/ivang/.zprofile
 ```
