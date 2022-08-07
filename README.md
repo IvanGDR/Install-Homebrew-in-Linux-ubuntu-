@@ -2,10 +2,12 @@
 
 
 ## Update Ubuntu
-'''
-$ sudo apt-get update
-'''
 
+```
+$ sudo apt-get update
+```
+
+```
 Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
 Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease                                                               
 Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease                                                         
@@ -13,9 +15,9 @@ Hit:5 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
 Hit:6 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
 Hit:4 http://mirrors.edge.kernel.org/ubuntu focal InRelease
 Reading package lists... Done
+```
 
-
-Install Build Essentials
+## Install Build Essentials
 $ sudo apt-get install build-essential
 
 Reading package lists... Done
@@ -29,14 +31,14 @@ Use 'sudo apt autoremove' to remove them.
 0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
 
 
-Install Git
+## Install Git
 
 $ sudo apt install git -y
 
 
 
 
-Run Homebrew installation script
+## Run Homebrew installation script
 
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
