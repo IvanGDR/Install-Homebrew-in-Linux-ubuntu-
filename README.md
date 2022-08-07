@@ -208,3 +208,6 @@ Screen Dumps:    /tmp/k9s-screens-ivang
 For further k9s tuning go to:
 
 https://github.com/IvanGDR/Installing-K9S-in-macOS-and-connecting-to-Remote-K8S-cluster/blob/main/README.md
+
+I used brew to install kubectx+kubens+popeye
+for kubectl in my case I got it already installed using apt-get package manager.
