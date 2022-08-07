@@ -88,8 +88,18 @@ Homebrew 3.5.8
 Homebrew/homebrew-core (git revision 3d2972b437c; last commit 2022-08-07)
 ```
 
-
-
-
+#### Install GCC
+```
+$ brew install gcc
+```
+```
+Running `brew update --auto-update`...
+==> Downloading https://
+...
+==> Installing gcc
+==> Pouring gcc--12.1.0.x86_64_linux.bottle.tar.gz
+...
+==> Running `brew cleanup gcc`...
+```
 
 
