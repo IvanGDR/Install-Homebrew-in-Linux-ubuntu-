@@ -105,7 +105,7 @@ $ echo $PATH
 
 #### Checking Homebrew version
 ```
-brew -v 
+$ brew -v 
 ```
 ```
 Homebrew 3.5.8
@@ -162,9 +162,7 @@ In this case, there is a minikube installation running. The config file is in th
 $ ls -la
 ```
 ```
-...
 drwxr-xr-x  4 ivang docker   4096 Aug  7 19:55  .kube
-...
 ```
 
 Furthermore
@@ -203,6 +201,8 @@ Configuration:   /home/ivang/.config/k9s/config.yml
 Logs:            /tmp/k9s-ivang.log
 Screen Dumps:    /tmp/k9s-screens-ivang
 ```
+
+
 
 **Note:
 For further k9s tuning go to:
