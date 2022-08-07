@@ -161,7 +161,27 @@ remote: Counting objects: 100% (400/400), done.
 
 ## Checking k9s installation
 
-In this case, there is a minikube installation running. The config file is in the home directory under .kube folder:
+In this case, there is a minikube installation running, first:
+```
+$ minikube start) . 
+```
+
+then,
+
+```
+$ minikube status                                                                                                                                    ✔ 
+```
+```
+minikube
+type: Control Plane
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Configured
+
+```
+
+The config file is in the home directory under .kube folder:
 ```
 $ ls -la
 ```
@@ -179,7 +199,7 @@ drwxr-x---  4 ivang docker 4096 Dec 16  2021 cache
 -rw-------  1 ivang docker  824 Aug  7 16:44 config
 ```
 
-### Double cheking k9s is running
+### Double cheking k9s is working
 ```
 $ k9s
 ```
