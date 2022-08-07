@@ -66,5 +66,30 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
     https://docs.brew.sh
 ```
 
+## Add Homebrew to system path
+```
+$ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"   
+```
+
+#### Additionally check Hombrew $PATH
+```
+$ echo $PATH                                                                                                                                         ✔ 
+```
+```
+/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+```
+
+#### Also Homebrew version
+```
+brew -v 
+```
+```
+Homebrew 3.5.8
+Homebrew/homebrew-core (git revision 3d2972b437c; last commit 2022-08-07)
+```
+
+
+
+
 
 
