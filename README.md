@@ -18,8 +18,10 @@ Reading package lists... Done
 ```
 
 ## Install Build Essentials
+```
 $ sudo apt-get install build-essential
-
+```
+```
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -29,19 +31,18 @@ The following packages were automatically installed and are no longer required:
   python-openssl python-tz python3.7-distutils python3.7-lib2to3
 Use 'sudo apt autoremove' to remove them.
 0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
-
+```
 
 ## Install Git
-
+```
 $ sudo apt install git -y
-
-
-
+```
 
 ## Run Homebrew installation script
-
+```
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
+```
+```
 ==> Checking for `sudo` access (which may request your password)...
 ==> Select a Homebrew installation directory:
 - Enter your password to install to /home/linuxbrew/.linuxbrew (recommended)
@@ -49,5 +50,21 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 - Press Control-C to cancel installation
 [sudo] password for ivang: 
 ==> This script will install:
+...
+==> Next steps:
+- Run these two commands in your terminal to add Homebrew to your PATH:
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/ivang/.zprofile
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+- Install Homebrew's dependencies if you have sudo access:
+    sudo apt-get install build-essential
+  For more information, see:
+    https://docs.brew.sh/Homebrew-on-Linux
+- We recommend that you install GCC:
+    brew install gcc
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+```
+
 
 
