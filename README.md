@@ -92,6 +92,10 @@ Following the recommendations after installing Homebrew:
 
 #### Add Homebrew to system path
 ```
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/ivang/.zprofile
+```
+
+```
 $ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"   
 ```
 
