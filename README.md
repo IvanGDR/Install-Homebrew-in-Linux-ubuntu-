@@ -135,7 +135,7 @@ $ brew doctor                                                                   
 Your system is ready to brew.
 ```
 
-## Homebrew Uninstallation Script
+## Homebrew Uninstallation Script (in case you want to revert back changes)
 ```
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 ```
