@@ -1,7 +1,27 @@
 # Install Homebrew in Linux (ubuntu)
 
-After installing k9s using snap, it should be noted that package is unmanteinaed so it won't work. Therefore another option to install k9s is using brew according to:
-https://k9scli.io/topics/install/
+After installing k9s using snap, it should be noted, this package is not longer mantained so it won't work if you install it.
+
+The potentiall errors, you may receive after running the following:
+
+```
+$ k9s
+```
+```
+ ____  __.________       
+|    |/ _/   __   \______
+|      < \____    /  ___/
+|    |  \   /    /\___ \ 
+|____|__ \ /____//____  >
+        \/            \/ 
+
+Boom!! Unable to connect to api server invalid configuration: [unable to read client-cert /home/ivang/.minikube/profiles/minikube/client.crt for minikube due to open /home/ivang/.minikube/profiles/minikube/client.crt: permission denied, unable to read client-key /home/ivang/.minikube/profiles/minikube/client.key for minikube due to open /home/ivang/.minikube/profiles/minikube/client.key: permission denied, unable to read certificate-authority /home/ivang/.minikube/ca.crt for minikube due to open /home/ivang/.minikube/ca.crt: permission denied].
+```
+Even certificates are in place as well as permissions to access them, it is impossible to overcome this issue. This broken snap package should be removed from repository but it is not the case as of today 07/08/2022.
+
+Therefore another option to install k9s is using brew according to: https://k9scli.io/topics/install/
+
+The following steps are required to accomplish this:
 
 ## Update Ubuntu
 
@@ -68,7 +88,9 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
     https://docs.brew.sh
 ```
 
-## Add Homebrew to system path
+Following the recommendations after installing Homebrew:
+
+#### Add Homebrew to system path
 ```
 $ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"   
 ```
