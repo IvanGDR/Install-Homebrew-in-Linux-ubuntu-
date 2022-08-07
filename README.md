@@ -107,6 +107,15 @@ $ echo $PATH
 /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 ```
 
+#### Content of .zprofile file
+```
+$ cat .zprofile                                                                                                                                      ✔ 
+```
+```
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+```
+
+
 #### Checking Homebrew version
 ```
 $ brew -v 
