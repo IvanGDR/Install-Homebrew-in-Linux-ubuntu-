@@ -1,5 +1,7 @@
-# Install-Homebrew-in-Linux-ubuntu
+# Install Homebrew in Linux (ubuntu)
 
+After installing k9s using snap, it should be noted that package is unmanteinaed so it won't work. Therefore another option to install k9s is using brew according to:
+https://k9scli.io/topics/install/
 
 ## Update Ubuntu
 
@@ -73,13 +75,13 @@ $ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #### Additionally check Hombrew $PATH
 ```
-$ echo $PATH                                                                                                                                         ✔ 
+$ echo $PATH
 ```
 ```
 /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 ```
 
-#### Also Homebrew version
+#### Checking Homebrew version
 ```
 brew -v 
 ```
@@ -88,7 +90,7 @@ Homebrew 3.5.8
 Homebrew/homebrew-core (git revision 3d2972b437c; last commit 2022-08-07)
 ```
 
-#### Install GCC
+#### Install GCC as pointed out by installation output
 ```
 $ brew install gcc
 ```
@@ -100,6 +102,20 @@ Running `brew update --auto-update`...
 ==> Pouring gcc--12.1.0.x86_64_linux.bottle.tar.gz
 ...
 ==> Running `brew cleanup gcc`...
+```
+
+#### Making sure Homebrew is ready
+
+```
+$ brew doctor                                                                                                                             ✔  3m 43s  
+```
+```
+Your system is ready to brew.
+```
+
+# Homebrew Uninstallation Script
+```
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 ```
 
 
